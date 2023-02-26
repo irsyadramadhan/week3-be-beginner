@@ -2,3 +2,4 @@
 - MVC
 - dotenv
 - JOIN SORT ILIKE LIMIT
+- soft delete
