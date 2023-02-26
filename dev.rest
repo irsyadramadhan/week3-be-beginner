@@ -1,0 +1,43 @@
+@url=http://localhost:3000
+###
+GET {{url}}/users
+
+###
+GET {{url}}/users/4
+
+###
+POST {{url}}/users
+Content-Type: application/json
+
+{
+    "name": "Clark"
+}
+
+###
+PUT {{url}}/users/4
+Content-Type: application/json
+
+{
+    "name": "Bruce"
+}
+
+###
+DELETE {{url}}/users/5
+
+###
+POST {{url}}/recipe
+Content-Type: application/json
+
+{
+    "title": "raw egg",
+    "category_id": 2,
+    "ingredients": "egg",
+    "image": "image",
+    "by_user_id": 2
+}
+
+###
+GET {{url}}/recipe
+
+###
+GET {{url}}/category
